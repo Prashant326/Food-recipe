@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"
+        ><img src="image/cooking.png" width="30px" alt=""
+      /></a>
+      <a href="index.html" >Home</a>
+      <a href="recpies.html">Recipes</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!--body-->
+    <section class="contact">
+      <div class="form-box">
+        <h2>Contact Us</h2>
+        <form action="" >
+          <div class="form-item">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-item">
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Your message:</label>
+            <textarea name="message" id="message" cols="30" rows="7"></textarea>
+          </div>
+          <div class="form-item">
+            <input type="button" value="Submit" id="submit"  onclick="sub()"/>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <div id="alerdmmy"> 
+      <p class="textalert">Thank you for message</p>
+      <button type="button" class="alertbtn" onclick="alertclose()">Okay</button>
+    </div>
+
+    <!--footer-->
+
+    <footer class="footer">
+      <div class="icons"> 
+        <a href="https://www.facebook.com" class="m-4"><img src="image/facebook.png" alt="" /></a>
+        <a href="https://www.instagram.com" class="m-4"><img src="image/instagram.png" alt="" /></a>
+        <a href="https://www.twitter.com" class="m-4"><img src="image/twitter.png" alt="" /></a>
+        <a href="https://www.youtube.com" class="m-4"><img src="image/youtube.png" alt="" /></a>
+       
+        <p class="mt-4 text-center">The Green Chef &copy; 2023</p>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+    <script>
+     /* const submitBtn = document.querySelector("#submit");
+
+      submitBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+      });*/
+
+      function sub()
+      {
+        document.getElementById("alerdmmy").style.display="flex";
+      }
+      function alertclose()
+      {
+        
+        document.getElementById("alerdmmy").style.display="none";
+        location.reload()
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Green Chef</title>
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+  <!--navbar start here-->
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active"><img src="image/cooking.png" width="30px" alt="" class="imgicon2" /></a>
+    <a href="index.html" >Home</a>
+    <a href="recpies.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  
+  <!--navbar end here-->
+
+  <!--main body of page-->
+
+  <!--Search bar using API-->
+
+  <div class="search-box-ce">
+  <div class="search-box">
+    <div class="search-container">
+      <input type="text" placeholder="Type a Dish name here..." id="user-inp" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+</div>
+
+
+<!--Card layout start here-->
+
+  <div class="main">
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img src="image/thepla.jpg" />
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Methi Thepla</h2>
+            <p class="card_text">
+              Faintly bitter, and wonderfully spiced Methi Thepla are savory
+              flatbreads that are delicious to enjoy as a delicious snack any
+              time of the day.Plus, get tasty suggestions Try Thepla with lemon or Mango Pickle,
+              Mango Chutney, or Mango Chunda.
+            </p>
+            <button class="btn card_btn">
+              <a href="recpies.html" class="btn_a">Read More</a>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img src="image/gota.jpg" />
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Methi Na Gota</h2>
+            <p class="card_text">
+              Methi na Gota is a Gujarati deep fried snack of savory and
+              spiced fritters. Basically these fritters are made with besan
+              a.k.a gram flour, fenugreek leaves (methi), banana, spices and
+              herbs. These tasty snack is usually served as a snack during tea
+              time.
+            </p>
+            <button class="btn card_btn">
+              <a href="recpies.html" class="btn_a">Read More</a>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img src="image/Basundi.jpg" />
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Basundi</h2>
+            <p class="card_text">
+              Basundi is a popular dessert most commonly made in Western
+              India, in such states as Maharashtra and Gujarat. It’s a bit
+              similar to Rabdi, which is often served in North India. Enjoy
+              basundi as it or with Puri (Indian fry bread).
+            </p>
+            <button class="btn card_btn">
+              <a href="recpies.html" class="btn_a">Read More</a>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <!--Footer start here-->
+  <footer class="footer">
+    <div class="icons">
+      <a href="https://www.facebook.com" class="m-4"><img src="image/facebook.png" alt="" class="imgicon1" /></a>
+      <a href="https://www.instagram.com" class="m-4"><img src="image/instagram.png" alt="" class="imgicon1" /></a>
+      <a href="https://www.twitter.com" class="m-4"><img src="image/twitter.png" alt="" class="imgicon1" /></a>
+      <a href="https://www.youtube.com" class="m-4"><img src="image/youtube.png" alt="" class="imgicon1"/></a>
+      <p class="mt-4 text-center">The Green Chef &copy; 2023</p>
+    </div>
+  </footer>
+
+  <!--Added javascript here-->
+  <script src="javascript/script.js"></script>
+
+</body>
+
+</html>

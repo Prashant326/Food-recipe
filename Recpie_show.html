@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Green Chef</title>
+
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/recpie_show.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--navbar start here-->
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"
+        ><img src="image/cooking.png" width="30px" alt=""
+      /></a>
+      <a href="index.html" class="active">Home</a>
+      <a href="recpies.html">Recipes</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="about-section">
+      <div id="rec_show"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="icons">
+        <a href="https://www.facebook.com" class="m-4"
+          ><img src="image/facebook.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com" class="m-4"
+          ><img src="image/instagram.png" alt=""
+        /></a>
+        <a href="https://www.twitter.com" class="m-4"
+          ><img src="image/twitter.png" alt=""
+        /></a>
+        <a href="https://www.youtube.com" class="m-4"
+          ><img src="image/youtube.png" alt=""
+        /></a>
+
+        <p class="mt-4 text-center">The Green Chef &copy; 2023</p>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+    <script>
+      /* get item using localstorage*/
+      document.getElementById("rec_show").innerHTML =
+        localStorage.getItem("Recpies_item");
+    </script>
+  </body>
+</html>

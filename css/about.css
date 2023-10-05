@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+body {
+  margin: 0;
+  color: #272727;
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  background-color: #ecf9ff;
+  padding: 0.5rem;
+}
+
+.topnav {
+  overflow: hidden;
+  /*  background-color: #DD4A48;*/
+
+  background-color: #e52165;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.topnav a:hover {
+  background-color: #f5eedc;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f5eedc;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  height: 3rem;
+  background-color: #e52165;
+  /*background-color:#e3615f;*/
+  /*background: linear-gradient(to right,#1f4037,#99f2c8);*/
+  font-size: 1.7em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.1em;
+}
+
+p {
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 0.1em;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  /*background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%); 
+  background: linear-gradient(to bottom left, #DD4A48, #f08385);*/
+  background: linear-gradient(#201f1f, #0c72a5);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.card_h3 {
+  opacity: 0.5;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+  margin-top: -1px;
+  margin-bottom: 2.5rem;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 0.7;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  background: #263238;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.icons {
+  padding-top: 1rem;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+
+.company-name {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 75%;
+  }
+
+  .cards_item {
+    display: flex;
+    padding: 2.5rem;
+  }
+  p {
+    font-size: 1.3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 0.1em;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
